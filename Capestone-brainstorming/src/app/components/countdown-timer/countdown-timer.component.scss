@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+//countdown
+.countdown-container {
+  display: flex;
+  font-size: 14px;
+}
+
+.countdown-container > div {
+  // margin: 0 2rem;
+  text-align: center;
+  // border: 1px solid black;
+  padding: 10px 10px;
+  // border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  color: black;
+  // min-width: 150px;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 45px;
+  margin: 10px;
+}

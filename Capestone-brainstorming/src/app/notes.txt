@@ -1,0 +1,83 @@
+-get rid of dashboard button on navbar once all signin procedures function...
+    -login button if authenticated should have to dashboard button appear
+
+Need to do:
+-hook up funds
+-new crud operations
+-circle progress
+-details - progress bar
+-details countdown
+-get deposit bucket working
+-dropdown on deposit list
+
+// let gd = document.getElementById('goalDate');
+    // let gd = this.goal.goalDate.toString();
+    // let ngd = new Date(gd);
+    // let d = new Date();
+    // console.log(gd);
+    // console.log(d);
+    // if (ngd != null) {
+    //   // let g = gd.;
+    //   console.log(ngd);
+    //   let newGD = new Date(ngd);
+    //   // console.log(newGD);
+    
+    let gd = this.goal.goalDate
+    var moment = require('moment');
+    let g = moment(gd).format();
+      let difference = moment() - g;
+      console.log(difference);
+
+      this.days = Math.floor(difference / 1000 / 60 / 60 / 24);
+
+      this.hours = Math.floor(difference / 1000 / 60 / 60) % 24;
+
+      this.min = Math.floor(difference / 1000 / 60) % 60;
+
+      this.sec = Math.floor(difference / 1000) % 60;
+
+      if (daysItem != null) {
+        daysItem.innerHTML = this.days.toString();
+        console.log(daysItem.innerHTML);
+      }
+      if (hoursItem != null) {
+        hoursItem.innerHTML = this.hours.toString();
+        console.log(hoursItem.innerHTML);
+      }
+      if (minItem != null) {
+        minItem.innerHTML = this.min.toString();
+        console.log(minItem.innerHTML);
+      }
+      if (secItem != null) {
+        secItem.innerHTML = this.sec.toString();
+        console.log(secItem.innerHTML);
+      }
+    }
+  }
+
+  let countDownDate = new Date(dateItem);
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate.getTime() - now.getTime();
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        // daysItem.innerHTML = days.toString();
+        // hoursItem.innerHTML = hours.toString();
+        // minItem.innerHTML = minutes.toString();
+        // secItem.innerHTML = seconds.toString();
+      }, 1000);
+    };
+  }

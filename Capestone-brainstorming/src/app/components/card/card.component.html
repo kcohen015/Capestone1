@@ -1,0 +1,21 @@
+<div class="card shadow-lg p-3 mb-5 bg-white rounded" *ngFor="let goal of goals">
+    <div class="circle" style="width: 170px;">
+        <div style="display: flex; justify-content: center; width: 100px; margin: 15px;">
+            <canvas baseChart [labels]="doughnutChartLabels" [datasets]="doughnutChartDatasets"
+                [options]="doughnutChartOptions" [legend]="false" [type]="'doughnut'">
+            </canvas>
+        </div>
+    </div>
+
+    <div class="info card-body">
+        <h5 class="card-title">{{ goal.title }}</h5>
+        <br>
+        <p class="card-text" style="font-size: 10pt;">{{ goal.description }}</p>
+        <p class="card-text" style="font-size: 10pt;">Goal: {{goal.amount}}</p>
+        <p class="card-text" style="font-size: 10pt;">Amount Saved: {{goal.fund}}</p>
+
+    </div>
+    <div class="more">
+        <a (click)="goalDetails(goal.id)" class="btn btn-primary" style="font-size: 14pt; color: white;">More</a>
+    </div>
+</div>

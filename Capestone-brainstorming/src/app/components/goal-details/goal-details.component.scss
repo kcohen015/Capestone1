@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    height: vh-100;
+  }
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.predict {
+  font-size: 12pt;
+}
+.outer-card {
+  margin: 0;
+  height: vh-100;
+}
+.predict {
+  font-size: 12pt;
+}
+.deposit {
+  text-align: end;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .btn {
+    margin-top: 5px;
+  }
+
+  .deposit {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+
+    .deposit-inner {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.withdrawl {
+  text-align: end;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .btn {
+    margin-top: 5px;
+  }
+}
+.withdrawl {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.deposit-inner {
+  display: flex;
+  flex-direction: column;
+}
+.CRUDbuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  margin: 15px 0px 0px 10px;
+  padding: 5px 8px;
+  color: white;
+}
+input {
+  margin-bottom: 10px;
+  padding: 5px 8px;
+}
+
+.card {
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.progress-card {
+  margin: 0;
+  padding: 0;
+  .col {
+    padding: 0;
+    margin: 0;
+  }
+  .progress {
+    margin: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+//countdown
+.countdown-container {
+  display: flex;
+}
+.big-text {
+  font-size: 12px;
+}
+
+.countdown-container > div {
+  // margin: 0 2rem;
+  text-align: center;
+  // border: 1px solid black;
+  padding: 10px 10px;
+  // border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  color: black;
+  // min-width: 150px;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 45px;
+  margin: 10px;
+}
+
+.hidden-card {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+w-card {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+d-card {
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.withdrawl {
+  margin-top: 0px;
+}
+.deposit {
+  margin-top: 0;
+}
+
+input {
+  font-size: 12pt;
+}
+
+.btn {
+  font-size: 14pt;
+}
+
+.btn-d,
+.btn-w {
+  width: fit-content;
+}
+.btnW {
+  display: flex;
+  justify-content: end;
+}
+.card-header {
+  font-style: normal;
+}
